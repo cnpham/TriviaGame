@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>Trivia Game</title>
+          
+            <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+         
+            <!--link to jQuery library-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            
+    </head>
+<body>
+    <div class="container">
+        <div id="quiz">
+            <h1>Quiz Time!</h1>
+            <div style="font-weight: bold" id="quiz-time-left"></div>
+            <hr style="margin-bottom: 20px">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Crystals Collector</title>
+            <p id="question"></p>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+            </div>
 
-    <!-- Added link to the jQuery Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-  </head>
-
-  <body>
-
-    <div>
-        <div id="box1">
-            <h1>Trivia Game!</h1>
-        </div>
-        <hr>
-        <div id="box2">
-          <h2>Time Remaining: <span id="wins-text"></span> Seconds</h2>
-          <h2>Losses: <span id="losses-text"></span></h2>
-          <h3>Target: <span id="target-text"></span></h3>
-          <h4>Crystals: <span id="crystal-text"></span></h4>
-        </div>
-        <div id="gems">
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="progress">Question x of y.</p>
+            </footer>
         </div>
     </div>
+<script type="text/javascript" src="assets/javascript/app.js">     
+</script>
+<form method="post" name="quiz" action="take_test.php" > </form>
 
-    <script type="text/javascript" src="assets/javascript/app.js">     
-    </script>
-  </body>
+</body>
 </html>
